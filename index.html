@@ -1,12 +1,50 @@
+
+</html>
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    form{
+      text-align: center;
+      background-color: rgb(100, 235, 235);
+      width: 100%;
+      height: 100%;
+      padding: 30px;
+      margin-top: 30px;
     
+    }
+
+    input{
+      display:block;
+      text-align: center;
+      margin: auto;
+      padding: 10px;
+      border-radius: 15px;
+      font-size: larger;
+    }
+
+  
+  </style>
+  <body>
+    <form id="GradeEvaluator">
+
+      <h1>Student Average Score Grade Evaluator</h1> <br>
+      <input type="number" id="score" placeholder="Enter first score" /> <br>
+      <input type="number" id="score2" placeholder="Enter second score" /> <br>
+      <input type="number" id="score3" placeholder="Enter third score" /> <br>
+      <input type="number" id="score4" placeholder="Enter fourth score" /> <br>
+      <input type="number" id="score5" placeholder="Enter fifth score" /> <br>
+      <input type="submit" value="Evaluate" style="background-color: black; color: white;">
+      <div id="result" style="font-size: larger; font-weight: bold;"></div>
+    </form>
     <script src="evaluate.js"></script>
-</body>
-</html>
+  </body>
