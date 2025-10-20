@@ -13,11 +13,6 @@ GradeEvaluator.addEventListener("submit", function (x) {
   let userInput4 = Number(document.getElementById("score4").value);
   let userInput5 = Number(document.getElementById("score5").value);
 
-  //   if (
-  //     userInput, userInput2, userInput3, userInput4, userInput5
-  //  < 0 || userInput, userInput2, userInput3, userInput4, userInput5 > 100) {
-  //     result = "Invalid score. Enter between 0 and 100";
-  //   }
 
   if (
     userInput < 0 || userInput > 100 || userInput == "" ||
