@@ -18,6 +18,19 @@ GradeEvaluator.addEventListener("submit", function (x) {
   //  < 0 || userInput, userInput2, userInput3, userInput4, userInput5 > 100) {
   //     result = "Invalid score. Enter between 0 and 100";
   //   }
+
+  if (
+    userInput < 0 || userInput > 100 || userInput == "" ||
+    userInput2 < 0 || userInput2 > 100 || userInput2 == "" ||
+    userInput3 < 0 || userInput3 > 100 || userInput3 == "" ||
+    userInput4 < 0 || userInput4 > 100 || userInput4 == "" ||
+    userInput5 < 0 || userInput5 > 100 || userInput5 == "" 
+) {
+  alert(`Invalid score. Enter between 0 and 100.`); 
+  return;
+}
+
+
   let avarage = evaluate(
     userInput,
     userInput2,
