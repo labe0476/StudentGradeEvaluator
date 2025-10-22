@@ -13,19 +13,6 @@ GradeEvaluator.addEventListener("submit", function (x) {
   let userInput4 = Number(document.getElementById("score4").value);
   let userInput5 = Number(document.getElementById("score5").value);
 
-
-  if (
-    userInput < 0 || userInput > 100 || userInput == "" ||
-    userInput2 < 0 || userInput2 > 100 || userInput2 == "" ||
-    userInput3 < 0 || userInput3 > 100 || userInput3 == "" ||
-    userInput4 < 0 || userInput4 > 100 || userInput4 == "" ||
-    userInput5 < 0 || userInput5 > 100 || userInput5 == "" 
-) {
-  alert(`Invalid score. Enter between 0 and 100.`); 
-  return;
-}
-
-
   let avarage = evaluate(
     userInput,
     userInput2,
@@ -34,7 +21,28 @@ GradeEvaluator.addEventListener("submit", function (x) {
     userInput5
   );
 
-  document.getElementById(
-    "result"
-  ).innerHTML = ` Your average score is  ${avarage}`;
+  if (
+    userInput < 0 ||
+    userInput > 100 ||
+    userInput == "" ||
+    userInput2 < 0 ||
+    userInput2 > 100 ||
+    userInput2 == "" ||
+    userInput3 < 0 ||
+    userInput3 > 100 ||
+    userInput3 == "" ||
+    userInput4 < 0 ||
+    userInput4 > 100 ||
+    userInput4 == "" ||
+    userInput5 < 0 ||
+    userInput5 > 100 ||
+    userInput5 == ""
+  ) {
+    document.getElementById("result").innerHTML =
+      "Invalid Score. Enter between 1 and 100.";
+  } else {
+    document.getElementById(
+      "result"
+    ).innerHTML = ` Your average score is  ${avarage}`;
+  }
 });
